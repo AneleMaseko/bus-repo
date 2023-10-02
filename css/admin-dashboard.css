@@ -1,0 +1,119 @@
+  body{
+    margin: opx;
+    padding: 0px;
+    background-color: #1b203d;
+    overflow: hidden;
+    font-family: system-ui;
+
+}
+.clearfix{
+    clear: both;
+}
+.logo{
+    margin: 0px;
+    margin-left: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+.logo span{ 
+    color: #f7403b;
+}
+
+    .sidenav{
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #272c4a;
+        overflow: hidden;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.5s;
+        padding-top: 30px;
+    }
+    .sidenav a{
+        padding: 15px 8px 15px 50px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover{
+        color: #f1f1f1;
+        background-color: #1b203d;
+    }
+    
+#main{
+    transition: left .5s;
+    padding: 16px;
+    margin-left: 300px; 
+}    
+.head{
+    padding:20px;
+}
+.col-md-6{
+    width: 50%;
+    float: left;
+    width: 160px;
+}
+.pro-img{
+    float:left;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 655px;
+}
+.profile p{
+    color: white;
+    font-weight: 500;
+    margin-left: 655px;
+    margin-top: 10px;
+    font-size: 13.5px; 
+    
+}
+.profile p span{
+    font-weight: 400;
+    font-size: 12px;
+    display: block;
+    color: #8e8b8b;
+    
+}
+.col-md-3{
+    position: relative;
+    width: 25%;
+    float: left;
+
+}
+.box{
+    width:85%;
+    height: 100px;
+    background-color: #272c4a;
+    margin-left: 10px; 
+}
+.box p{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.box p span{
+    font-size: 20px;
+    font-weight: 400;
+    color:#818181;
+}
+.box-icon{
+    font-size: 40px!important;
+    /* float: right; */
+    margin-top: 35px!important;
+    /* color: #818181; */
+    padding-right: 10px;
+}

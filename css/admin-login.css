@@ -1,0 +1,77 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.page{
+    position: relative;
+    /* border: 5px solid red; */
+    width: 100%;
+    height: 699px;
+    text-align: center;
+    background-color: white;
+}
+.login-div{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    height: 380px;
+    
+    /* border: 2px solid yellow; */
+    /* background-color: rgba(red, green, blue, alpha); */
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left:1000px;
+    /* margin-left: 70px; */
+    right: 500px;
+    top: 150px;
+    border-radius: 15px;
+    
+
+    
+}
+.login-div img{
+    position: relative;
+    height: 54px;
+    width: 320px;
+    margin-top: 15px;
+    border-radius: 15px;
+    
+
+}
+.login-div input{
+    position: relative;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 5px;
+  padding-right: 50px;
+  padding-left: 50px; 
+  bottom: 14px;
+  /* border-radius: 40px; */
+  
+
+}
+
+.login-div input:focus{
+    outline: 2px solid #2b795c;
+    border-radius:15px;
+  }
+.login-div button{
+    position: relative;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 2px solid #2b795c ;
+    background-color: sandybrown;
+    padding: 5px 25px 5px 25px;
+    
+}
+.login-div button:hover{
+ background-color: rgb(247, 119, 8);
+ border: 2px solid #568a77 ;
+}
+
+.login-div a{
+    position: relative;
+    top: 10px;
+}
+

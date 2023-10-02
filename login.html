@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body>
+
+<!-- 
+    <div class="container">
+
+         <h1>Login</h1>
+
+         <form onsubmit="login(event)">
+            <div>
+                <input type="email" name="" id="myEmail" placeholder="email">
+            </div>
+            <div>
+                <input type="password" name="" id="password" placeholder="password">
+            </div>
+            <button id="sigIn" value="login">Login</button>
+         </form> 
+    </div> -->
+
+     <!-- Header -->
+     <header class="header">
+        <nav class="nav">
+          <a href="#" class="nav_logo"> </a>
+  
+          <ul class="nav_items">
+            <li class="nav_item">
+              <a href="#" class="nav_link">Home</a>
+              <a href="#" class="nav_link">Product</a>
+              <a href="#" class="nav_link">Services</a>
+              <a href="#" class="nav_link">Contact</a>
+            </li>
+          </ul>
+  
+          <button class="button" id="form-open">Login</button>
+        </nav>
+      </header>
+  
+
+
+   <section class="home">
+    <div class="form_container">
+        <i class="uil uil-times form_close" ></i>
+
+        <!-- login form -->
+        
+        <div class="form login_form" >
+            <form onsubmit="login(event)">
+                <h2>Login</h2>
+                <div class="input_box">
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+
+                <div class="input_box">
+                    <input type="password" id="password" placeholder="Enter your email" required />
+                    <i class="uil uil-lock password" ></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+
+                <div class="option_field">
+                    <span>
+                        <input type="checkbox" id="check" />
+                        <label for="check">Remember me</label>
+                    </span>
+                    <a href="#" class="forgot_pw">Forgot password?</a>
+                </div>
+
+                <!-- <button id="sigIn" value="login">Login</button> -->
+
+                <button id="sigIn" class="button" value="login">Login Now</button>
+
+                <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a> </div>
+            </form>
+        </div>
+
+        <!-- signup -->
+        <div class="form signup_form">
+            <form onsubmit="Signup(event)">
+                <h2>Signup</h2>
+                <div class="input_box">
+                    <input type="text"  id="firstname" placeholder="firstname">
+                </div>
+                <div class="input_box">
+                    <input type="text" name="" id="lastname" placeholder="lastname">
+                </div>
+                <div class="input_box">
+                    <input type="email" id="myEmail" placeholder="Enter your email" required />
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+
+                <!-- <div class="input_box">
+                    <input type="password" id="myPassword" placeholder="Create password" required />
+                    <i class="uil uil-lock password"></i>
+                    <div class="uil uil-eye-slash pw_hide"></div>
+                </div> -->
+                <div class="input_box">
+                    <input type="password" id="myPassword" placeholder="Create password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div> 
+                <!-- <button id="signup" value="Sign">Sign Up</button>-->
+                <button id="signup" value="Sign" class="button">Signup Now</button>
+                <div class="login_signup">Already have an acccount? <a href="#" id="login">Login</a></div>
+            </form>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+    <script src="javascript/app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+<script type="module" >
+    
+   // Import the functions you need from the SDKs you need
+   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";   
+   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";   
+   import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+   // TODO: Add SDKs for Firebase products that you want to use
+   // https://firebase.google.com/docs/web/setup#available-libraries
+ 
+   // Your web app's Firebase configuration
+   const firebaseConfig = {
+     apiKey: "AIzaSyCVgXanwGKLlRoULzFLRLz4tXZ9qnH_rSE",
+     authDomain: "busca-7a2d3.firebaseapp.com",
+     databaseURL: "https://busca-7a2d3-default-rtdb.firebaseio.com",
+     projectId: "busca-7a2d3",
+     storageBucket: "busca-7a2d3.appspot.com",
+     messagingSenderId: "638833424487",
+     appId: "1:638833424487:web:dfafce65b69ff8810f3cc2"
+   };
+ 
+   // Initialize Firebase
+   const app = initializeApp(firebaseConfig);
+   const analytics = getAnalytics(app);
+   const auth = getAuth();
+
+
+   var email = document.getElementById("email");
+   var password = document.getElementById("password");
+
+   window.login=function(e){
+    e.preventDefault();
+    var obj = {
+        email:email.value,
+        password: password.value
+    }
+    signInWithEmailAndPassword(auth, obj.email, obj.password)
+    .then(function(success){
+
+        
+        alert("Logged successfully") 
+    })
+    .catch(function(err){
+        alert("login error" + err)
+    })
+
+    console.log(obj)
+   }
+
+
+
+ 
+
+
+//    //Getting all the Objects of html
+//    var firstname = document.getElementById("firstname")
+//    var lastname = document.getElementById("lastname")
+//    var email = document.getElementById("myEmail")
+//    var password = document.getElementById("password")
+ 
+//    //making a function for storing data
+//    window.Signup = function (e) {
+//      e.preventDefault();
+//      var obj = {
+//          firstname:firstname.value,
+//          lastname:lastname.value,
+//          email:email.value,
+//          password:password.value
+//      }
+//      createUserWithEmailAndPassword(auth, obj.email,obj.password).then(function (success) {
+//          alert("Signup Successfully")
+         
+//      }).catch(function(err) {
+         
+//          alert("error" + err)
+         
+//      })
+//      console.log(obj)
+     
+//    }
+
+  </script>
+
+
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig1 = {
+  apiKey: "AIzaSyCVgXanwGKLlRoULzFLRLz4tXZ9qnH_rSE",
+  authDomain: "busca-7a2d3.firebaseapp.com",
+  databaseURL: "https://busca-7a2d3-default-rtdb.firebaseio.com",
+  projectId: "busca-7a2d3",
+  storageBucket: "busca-7a2d3.appspot.com",
+  messagingSenderId: "638833424487",
+  appId: "1:638833424487:web:dfafce65b69ff8810f3cc2"
+};
+
+// Initialize Firebase
+const app1 = initializeApp(firebaseConfig1);
+const db1 = getFirestore(app1)
+const auth1 = getAuth()
+
+//Getting all the Objects of html
+var firstname = document.getElementById("firstname")
+var lastname = document.getElementById("lastname")
+var email = document.getElementById("myEmail")
+var password = document.getElementById("myPassword")
+
+//making a function for storing data
+window.Signup = function (e) {
+  e.preventDefault();
+  var obje = {
+      firstname:firstname.value,
+      lastname:lastname.value,
+      email:email.value,
+      password:password.value
+  }
+  createUserWithEmailAndPassword(auth1, obje.email,obje.password).then(function (success) {
+      alert("Signup Successfully")
+      
+  }).catch(function(err) {
+      
+      alert("error" + err)
+      
+  })
+  console.log(obje)
+  
+}
+</script>
+  
+
+</html>

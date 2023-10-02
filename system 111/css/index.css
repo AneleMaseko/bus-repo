@@ -1,0 +1,352 @@
+body{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: center;
+    background-color: #2b795c;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+z-index: 10000000000;
+width: 100%;
+
+}
+
+.left-nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .right-Nav{
+        position: relative;
+    
+    }
+    .right-Nav a{
+        margin-left: 25px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 400;
+        color: black;
+    
+        
+    }
+    .right-Nav a.active{
+        color: sandybrown;
+        text-decoration: none;
+        font-weight: bold;
+       
+    }
+    .left-nav img{
+        height: 50px;
+        width: auto;
+    }
+    .pic{
+        background-image: url(../img/IMG-6027.jpg);
+        
+        position:fixed;
+        
+    z-index: -999 !important;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	will-change: transform;
+    filter: brightness(50%);
+    
+        
+        
+    }
+    .message h4{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        
+        text-align: center;
+        top: 450px;
+        font-size: 45px;
+        color: rgb(189, 121, 61);
+        
+        
+
+
+    }
+
+    .page h4{
+        position: relative;
+        display: flex;
+        color:  white;
+        font-size: 30px;
+      justify-content: center;
+      text-align: center;
+      top: 50%;
+      left: 30%;
+      
+      
+    }
+    /* .booking-div{
+        position: relative;
+       top: 750px;
+        background-color: #949494;
+       
+    } */
+    
+    .booking-div{
+        position: relative;
+        color: white;
+         
+        background-color: rgba(0,0,0,0.62);
+        /*  border-radius: 0px;
+        margin-top: 10;  */
+        top: 999px;
+        padding: 30px;
+        height: 4               00px;
+
+
+    }
+    .booking-div .row  .col-md-4{
+        
+        padding: 20px;
+    }
+    .booking-div .row  button{
+        position: relative;
+        border: 3px solid sandybrown;
+        bottom: 60px;
+        border-radius: 15px;
+        
+    
+         margin-left: 160px;
+    }
+    .booking-div .row  button:hover{
+        background-color: rgb(185, 169, 153);
+    }
+    .booking-div img{
+        height: 60px;
+        font-weight: 60px;
+        
+    }
+    .booking-div .row h2{ 
+        margin-top: 10px;
+        color:sandybrown;
+        
+        border-radius: 10px;
+        z-index: 999999999999999;
+        padding: 100px;
+    }
+    .row p{ 
+      position: relative;
+        color: white;
+        
+        bottom: 100px;
+    
+        
+    }
+    .row img{
+        position: relative;
+        margin-left: 200px;
+        margin-bottom: -100px;
+    }
+    .booking-div {
+        position: relative;
+        bottom: 70px;
+        border-radius: 10px;
+        
+
+
+    }
+.page2 img{
+    position: relative;
+        height: 50%;
+        width: auto;
+        margin-right: 2px;
+        margin-left: 2px;
+        margin-bottom: 20x;
+
+    }
+    .page2{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        background-color: rgba(0, 0,0, 0.5);
+        width: 100%;
+        background-color: whitesmoke;
+        margin-top: 1000px;
+        
+    }
+    .page3{
+        position: relative;
+        height: 30%;
+        width: auto;
+        background-color: whitesmoke;
+    }
+    .page3 h3{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        top: 200px;
+        margin-left: 260px;
+        margin-right: 260px;
+        color: rgb(116, 60, 11);
+    }
+
+.left{
+    
+    height: 50px;
+    width:50%;
+    margin: 20px;
+    border-radius: 15px;
+}
+.right{
+    
+    height: 50px;
+    width: 50%;
+    margin: 20px;
+    border-radius: 15px;
+}
+.page4{
+    position: relative;
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.lef{
+    height: 500px;
+    width: 35%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    
+}
+.righ{
+    height: 500px;
+    width: 65%;
+    
+    
+}
+.swiper{
+    width: 50%;
+    height: fit-content;
+    left: 0%;
+
+}
+.swiper-slide img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    
+}
+.righ{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.righ h4{
+    font-size: 25px;
+    color: rgb(116, 60, 11);
+}
+
+    
+   
+.footer .row{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.footer
+{
+    padding:60px;
+    padding-right: 100px;
+    padding-left: 100px;
+ width: 100%;
+ background-color: rgb(41,41,41);
+ color: white;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.footer .row .footer-heading{
+    position: relative;
+    text-align: left;
+    width:fit-content;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.footer .row .footer-heading h6{
+font-size: 20px;
+
+width: fit-content;
+}
+.footer .row .footer-heading .line{
+    border-bottom: 3px solid sandybrown;
+    width: 65%;
+
+
+}
+.footer .row p{
+    text-align: left;
+}
+.footer .row p a{
+    text-decoration: none;
+    color: rgb(211,211,211);
+
+}
+.footer-heading .links{
+    margin-top: 40px;
+}
+.footer-heading .links span{
+    
+    font-size: 30px;
+    margin-right: 20px;
+}
+.footer-heading .links span .fa-facebook:hover{
+    color: rgb(59,89,152);
+    cursor: pointer;
+}
+.footer-heading .links span .fa-instagram:hover{
+    color: rgb(251,57,88);
+    cursor: pointer;
+
+}
+.footer-heading .links span .fa-twitter:hover{
+    color: rgb(29,161,242);
+    cursor: pointer;
+}
+.footer-heading .links span .fa-linkedin:hover{
+    color: rgb(10,102,194);
+    cursor: pointer;
+}
+
+    
+ 
