@@ -1,2 +1,2 @@
 # bus-repo
-# the project in the master repo
+# the project is in the master repo
