@@ -9,9 +9,9 @@
     
      };
      const serviceID ="service_ydftyfp";
-     const templateID = "template_2lup10g"
+     const templateID = "template_2lup10g";
 
-     console.log("successfully loaded ")
+     console.log("successfully loaded ");
   
      emailjs.send(serviceID,templateID,params)
      .then(
@@ -21,7 +21,7 @@
           document.getElementById("myMessage").value = "";
   
           console.log(res);
-          alert("your message was sent successfull  ")
+          alert("your message was sent successfull")
       })
       .catch((err) => console.log(err))
     

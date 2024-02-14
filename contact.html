@@ -12,10 +12,10 @@
 
      
 
-    <!--<script type="text/javascript"
+    <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
-<script type="text/javascript">
+ <!--<script type="text/javascript">
    (function(){
       emailjs.init("oAxxovGccLkUbAmR5");
    })();
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form>
+                <form onsubmit="sendEmail(); reset(); return false" >
                     <h2>Send Message</h2>
                     <div class="inputBox">
                         <input type="text" name="" id="name" required="required">
@@ -76,8 +76,8 @@
                         <span>Type your Message...</span>
                     </div>
                     <div class="inputBox">  
-                        <!-- <input type="submit" name="" value="Send"> -->
-                        <button onclick="sendEmail()">Submit</button>
+                        <input type="submit" name="" value="Send">
+                        <!-- <button onclick="sendEmail()">Submit</button> -->
                     </div>
                 </form>
             </div>
@@ -92,13 +92,13 @@
 
 
 
-<!-- <script src="javascript/contact.js"></script> -->
+<script src="javascript/contact.js"></script>
     <script src="https://kit.fontawesome.com/aeb5aa9664.js" crossorigin="anonymous"></script>
 </body>
 
-<script type="text/javascript"
+<!-- <script type="text/javascript"
 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
+</script> -->
 <script type="text/javascript">
 (function(){
 emailjs.init("oAxxovGccLkUbAmR5");
